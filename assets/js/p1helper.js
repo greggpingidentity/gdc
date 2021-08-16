@@ -2,8 +2,8 @@
 const environmentID = '2b69f842-a8b5-47b7-b5f9-976699b9e150'; // env ID from p1 console
 const baseUrl = 'https://gdc-poc.ping-eng.com/gdc'; //Where this app is hosted --> No trailing slash needed
 
-const workerClientID = '85869232-df1f-4c3b-ade9-180752354e42'; //used to create/manage users
-const workerClientSecret = 'RSC-gQIfk-sbRL0lcZ-ghByD7p4vwetcOruDkHgYCbzUbvPLQ8LZ_q88fPWpzD2N';
+const workerClientID = '851377b0-1f66-4355-8922-831ca35a0856'; //used to create/manage users
+const workerClientSecret = 'O5aUY~Kez~IcaOgfDC9O~Kbe9p1dJ0mrMdhQnAPI~B6fospneJ8Q1FJIItmU_ioL';
 
 const appClientID = 'b6eaef17-4201-4a61-9bf1-83805f778fa4'; //used for enduser logon experience
 const appClientSecret ='Esf4_~QAYD-_oTClRTVxM5y3G0Wgoax2-guUbfUl7m3edmnXfoylvIg-~94ekJSd'; //used for out of band transaction approvals
