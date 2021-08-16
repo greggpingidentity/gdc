@@ -1,6 +1,6 @@
 //p14C Variables
 const environmentID = '2b69f842-a8b5-47b7-b5f9-976699b9e150'; // env ID from p1 console
-const baseUrl = 'https://apache.rhode.island/GDC'; //Where this app is hosted --> No trailing slash needed
+const baseUrl = 'https://gdc-poc.ping-eng.com/gdc/'; //Where this app is hosted --> No trailing slash needed
 
 const workerClientID = '85869232-df1f-4c3b-ade9-180752354e42'; //used to create/manage users
 const workerClientSecret = 'RSC-gQIfk-sbRL0lcZ-ghByD7p4vwetcOruDkHgYCbzUbvPLQ8LZ_q88fPWpzD2N';
