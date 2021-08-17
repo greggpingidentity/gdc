@@ -19,6 +19,7 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="profile.html">My Profile</a></li>
+						<li id="authbutton"><a href="#"></a></li>
 						<li><a href="login.html" class="button">Login/Open an Account</a></li> 
 					</ul>
 				</nav>
@@ -71,6 +72,11 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/p1.js"></script>
-
+			<script>
+				$(document).ready(function () {
+				console.log("Page ready function");
+				session();
+				});
+			</script>
 	</body>
 </html>

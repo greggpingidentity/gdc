@@ -21,7 +21,7 @@ const scopes = 'openid profile email address phone p1:update:user p1:read:user p
 const responseType = 'token id_token'; // tokens to recieve
 
 const landingUrl = baseUrl + '/index.html'; // url to send the person once authentication is complete
-const logoutUrl = baseUrl + '/logout/'; // whitelisted url to send a person who wants to logout
+const logoutUrl = authUrl + "/" + environmentID + "/as/signoff?post_logout_redirect_uri=" + logoffRedirect + "&id_token_hint";
 const redirectUri = baseUrl + '/login.html'; // whitelisted url P14C sends the token or code to
 const adminRedirect = baseUrl +'/adminlogon.html'; //redirect uri for admin
 
@@ -89,4 +89,29 @@ function parseJwt(token) {
         $('#warningMessage').text(data.responseJSON.details[0].message);
         $('#warningDiv').show();
       });
+  }
+
+  function session(){
+    if (Cookies.get('accessToken') && Cookies.get('idToken')) {
+      console.log("Cookies exisit show logoff button");
+      $('#authbutton').text='Logout';
+      // document.getElementById('authbutton').innerHTML = '<a href="' + logoutUrl + Cookies.get("idToken") + '">LogOff</a>';
+      document.getElementById('authbutton').innerHTML =  '<a onclick="signoff()">SignOff</a>';
+
+    }
+    else {
+      console.log("cookies don't exist show login");
+      $('#authbutton').text='Login';
+      document.getElementById('authbutton').innerHTML = '<a href="' + landingpage + '">Login</a>';
+    }
+  }
+
+  function signoff(){
+    let redirect = logoutUrl + "=" + Cookies.get("idToken");
+    Cookies.remove('idToken');
+    Cookies.remove('accessToken');
+    Cookies.remove('userAPIid');
+
+    console.log("Logout redirect is: "+redirect);
+    window.location.replace(redirect);
   }
