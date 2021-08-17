@@ -106,7 +106,7 @@ function parseJwt(token) {
     else {
       console.log("cookies don't exist show login");
       $('#authbutton').text='Login';
-      document.getElementById('authbutton').innerHTML = '<a href="' + landingpage + '">Login</a>';
+      document.getElementById('authbutton').innerHTML = '<a href="' + landingUrl + '">Login</a>';
     }
   }
 
