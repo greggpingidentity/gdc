@@ -119,5 +119,5 @@ function parseJwt(token) {
     Cookies.remove('workerAT');
 
     console.log("Logout redirect is: "+redirect);
-    window.location.replace(redirect);
+    window.location.replace("https://pingidentity.com");
   }
