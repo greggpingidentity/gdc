@@ -24,6 +24,7 @@ const landingUrl = baseUrl + '/index.html'; // url to send the person once authe
 const logoutUrl = authUrl + "/" + environmentID + "/as/signoff?post_logout_redirect_uri=" + logoffRedirect + "&id_token_hint";
 const redirectUri = baseUrl + '/login.html'; // whitelisted url P14C sends the token or code to
 const adminRedirect = baseUrl +'/adminlogon.html'; //redirect uri for admin
+const logoffRedirect = baseUrl + '/index.html'; //redirect after signoff
 
 const authUrl = 'https://auth.pingone.com';
 const apiUrl = 'https://api.pingone.com/v1';
@@ -93,7 +94,7 @@ function parseJwt(token) {
 
   function session(){
     if (Cookies.get('accessToken') && Cookies.get('idToken')) {
-      console.log("Cookies exisit show logoff button");
+      console.log("Cookies exist show logoff button");
       $('#authbutton').text='Logout';
       // document.getElementById('authbutton').innerHTML = '<a href="' + logoutUrl + Cookies.get("idToken") + '">LogOff</a>';
       document.getElementById('authbutton').innerHTML =  '<a onclick="signoff()">SignOff</a>';
