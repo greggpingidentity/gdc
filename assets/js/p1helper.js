@@ -21,10 +21,11 @@ const scopes = 'openid profile email address phone p1:update:user p1:read:user p
 const responseType = 'token id_token'; // tokens to recieve
 
 const landingUrl = baseUrl + '/index.html'; // url to send the person once authentication is complete
+const logoffRedirect = baseUrl + '/index.html'; //redirect after signoff
 const logoutUrl = authUrl + "/" + environmentID + "/as/signoff?post_logout_redirect_uri=" + logoffRedirect + "&id_token_hint";
 const redirectUri = baseUrl + '/login.html'; // whitelisted url P14C sends the token or code to
 const adminRedirect = baseUrl +'/adminlogon.html'; //redirect uri for admin
-const logoffRedirect = baseUrl + '/index.html'; //redirect after signoff
+
 
 const authUrl = 'https://auth.pingone.com';
 const apiUrl = 'https://api.pingone.com/v1';
