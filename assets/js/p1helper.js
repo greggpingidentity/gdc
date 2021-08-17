@@ -115,6 +115,8 @@ function parseJwt(token) {
     Cookies.remove('idToken');
     Cookies.remove('accessToken');
     Cookies.remove('userAPIid');
+    Cookies.remove('userId');
+    Cookies.remove('workerAT');
 
     console.log("Logout redirect is: "+redirect);
     window.location.replace(redirect);
