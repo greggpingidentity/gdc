@@ -100,13 +100,13 @@ function parseJwt(token) {
       console.log("Cookies exist show logoff button");
       $('#authbutton').text='Logout';
       // document.getElementById('authbutton').innerHTML = '<a href="' + logoutUrl + Cookies.get("idToken") + '">LogOff</a>';
-      document.getElementById('authbutton').innerHTML =  '<a onclick="signoff()">SignOff</a>';
+      document.getElementById('authbutton').innerHTML =  '<a onclick="signoff()" class="button">SignOff</a>';
 
     }
     else {
       console.log("cookies don't exist show login");
       $('#authbutton').text='Login';
-      document.getElementById('authbutton').innerHTML = '<a href="' + landingUrl + '">Login/Open an Account</a>';
+      document.getElementById('authbutton').innerHTML = '<a href="' + landingUrl + '" class="button">Login/Open an Account</a>';
     }
   }
 
