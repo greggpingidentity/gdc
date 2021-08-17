@@ -174,6 +174,7 @@ function getNextStep(flowID){
 
         console.log('Rendering login form');
         getWorkerAccessToken();
+        console.log('GotAccessToken');
         $('#loginDiv').show();
         $('#otpDiv').hide();
         $('#pushDiv').hide();
