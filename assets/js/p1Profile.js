@@ -671,6 +671,35 @@ function updateRewards(){
 
 }
 
+// pawned function 
+function pwned(status){
+  console.log("pwned fucntion called");
+  console.log("pwned status: " + status);
+
+  switch (status) {
+    case 'Change':
+      console.log("pwned Change");
+      checkpwned('change');
+      break;
+    case 'SAFE':
+      console.log("pwned SAFE");
+      document.getElementById("changePwdButton").disabled = false;
+      $('#pwnedWarning').hide('');
+      break;
+    case 'BREACHED':
+      console.log("pwned BREACHED");
+      // document.getElementById("changePwdButton").disabled = true;
+      document.getElementById("pwnedWarning").innerHTML = "This password is detected on HaveIBeenPwned.com"
+      $('#pwnedWarning').show('');
+      break;
+    default:
+      console.log('Unexpected outcome');
+      checkpwned('change');
+      break;
+  }
+}
+
+
 
 // function base64url(source) {
 //   // Encode in classical base64
