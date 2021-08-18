@@ -271,6 +271,7 @@ function updatePassword(){
       }
     }).done(function(data) {
       console.log(data);
+      $('#warningDiv').hide();
     })
     .fail(function(data) {
       console.log('ajax call failed');
