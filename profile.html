@@ -21,11 +21,7 @@
 				<nav id="nav">
 					<ul>
 						<li><a href="profile.html">My Profile</a></li>
-						<!--<li><a href="#" id="authbutton">SignOff</a></li> -->
-
-
-						
-
+						<li><a href="#" id="authbutton">Login/Open an Account</a></li>				
 					</ul>
 				</nav>
 			</header>
@@ -221,6 +217,7 @@
 			</script>
 			<script>
 				$(document).ready(function () {
+					session();
 					console.log("Page ready function");
 					console.log("hide otp div");
 					$('#otpDiv').hide();
