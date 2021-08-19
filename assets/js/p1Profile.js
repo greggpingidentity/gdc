@@ -271,7 +271,7 @@ function updatePassword(){
       }
     }).done(function(data) {
       console.log(data);
-      $('#warningMessage').text("Your password has changed sucessfully");
+      $('#warningMessage').text("Your password has changed successfully");
       $('#warningDiv').show();
     })
     .fail(function(data) {
