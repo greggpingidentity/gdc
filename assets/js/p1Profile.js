@@ -673,7 +673,7 @@ function updateRewards(){
 
 }
 
-// pawned function 
+// pwned function 
 function pwned(status){
   console.log("pwned fucntion called");
   console.log("pwned status: " + status);

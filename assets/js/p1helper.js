@@ -1,15 +1,15 @@
 //p14C Variables
-const environmentID = '2b69f842-a8b5-47b7-b5f9-976699b9e150'; // env ID from p1 console
+const environmentID = '86e7fcd8-496b-4a8e-9963-a3c2f1f1b547'; // env ID from p1 console
 const baseUrl = 'https://gdc-poc.ping-eng.com/gdc'; //Where this app is hosted --> No trailing slash needed
 
-const workerClientID = '851377b0-1f66-4355-8922-831ca35a0856'; //used to create/manage users
-const workerClientSecret = 'O5aUY~Kez~IcaOgfDC9O~Kbe9p1dJ0mrMdhQnAPI~B6fospneJ8Q1FJIItmU_ioL';
+const workerClientID = '525782fa-7b4a-4df0-b984-ef975004544c'; //used to create/manage users
+const workerClientSecret = 'KDB6PnS8Ntj6FCpEzcRKQOHthb4UvQv01mUME4xGKygELxr_.34Ik8GUTPsyTdO-';
 
-const appClientID = 'b6eaef17-4201-4a61-9bf1-83805f778fa4'; //used for enduser logon experience
-const appClientSecret ='Esf4_~QAYD-_oTClRTVxM5y3G0Wgoax2-guUbfUl7m3edmnXfoylvIg-~94ekJSd'; //used for out of band transaction approvals
+const appClientID = '525782fa-7b4a-4df0-b984-ef975004544c'; //used for enduser logon experience
+const appClientSecret ='KDB6PnS8Ntj6FCpEzcRKQOHthb4UvQv01mUME4xGKygELxr_.34Ik8GUTPsyTdO-'; //used for out of band transaction approvals
 
 //const agentClientID ='fec0bfde-63b0-4256-bff7-46105dbd2497'; //user for agent/admin logon experience
-const agentClientID ='85869232-df1f-4c3b-ade9-180752354e42'; //user for agent/admin logon experience
+const agentClientID ='525782fa-7b4a-4df0-b984-ef975004544c'; //user for agent/admin logon experience
 
 
 //haveibeenpwned
