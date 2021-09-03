@@ -5,8 +5,8 @@ const baseUrl = 'https://gdc-poc.ping-eng.com/gdc'; //Where this app is hosted -
 const workerClientID = '525782fa-7b4a-4df0-b984-ef975004544c'; //used to create/manage users
 const workerClientSecret = 'KDB6PnS8Ntj6FCpEzcRKQOHthb4UvQv01mUME4xGKygELxr_.34Ik8GUTPsyTdO-';
 
-const appClientID = '525782fa-7b4a-4df0-b984-ef975004544c'; //used for enduser logon experience
-const appClientSecret ='KDB6PnS8Ntj6FCpEzcRKQOHthb4UvQv01mUME4xGKygELxr_.34Ik8GUTPsyTdO-'; //used for out of band transaction approvals
+const appClientID = '29f3927c-a0c1-46af-9bda-22bb8f8aa80e'; //used for enduser logon experience
+const appClientSecret ='mqI1wYnpa_td4LMKdC-1ouDgctZCIMQluwG.J9.nfV3YvVFf0ybVv9CNplTpUlLN'; //used for out of band transaction approvals
 
 //const agentClientID ='fec0bfde-63b0-4256-bff7-46105dbd2497'; //user for agent/admin logon experience
 const agentClientID ='525782fa-7b4a-4df0-b984-ef975004544c'; //user for agent/admin logon experience
